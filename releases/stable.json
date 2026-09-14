@@ -1,0 +1,36 @@
+{
+  "version": "0.3.0",
+  "channel": "stable",
+  "released_at": "2026-09-14T23:00:00Z",
+  "min_updater_version": "0.3.0",
+  "components": {
+    "compiler": {
+      "version": "0.3.0",
+      "size": 18450000,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "url": "https://downloads.adeshlang.org/releases/stable/0.3.0/compiler-windows-x86_64.zip",
+      "target_os": "windows",
+      "target_arch": "x86_64"
+    },
+    "stdlib": {
+      "version": "0.3.0",
+      "size": 3200000,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "url": "https://downloads.adeshlang.org/releases/stable/0.3.0/stdlib.zip"
+    },
+    "runtime": {
+      "version": "0.3.0",
+      "size": 12500000,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "url": "https://downloads.adeshlang.org/releases/stable/0.3.0/runtime-windows-x86_64.zip",
+      "target_os": "windows",
+      "target_arch": "x86_64"
+    },
+    "ai_model": {
+      "version": "0.1.0",
+      "size": 348000000,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "url": "https://downloads.adeshlang.org/releases/models/adesh-coder-0.5b-q4_0.gguf"
+    }
+  }
+}

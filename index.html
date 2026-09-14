@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdeshLang — Fast, Safe & Modern Systems Language</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-badge">AdeshLang 0.3.0</div>
+            <h1>AdeshLang Distribution &amp; Update System</h1>
+            <p class="tagline">Deterministic, high-performance programming language distribution infrastructure</p>
+        </header>
+
+        <section class="card">
+            <h2>Overview</h2>
+            <p>AdeshLang is an advanced programming language offering unified compilation backends (AOT Native via LLVM 23.1.1 / MLIR, JIT, VM, and Tree-Walk Interpreter), static typing with bidirectional inference, and built-in incremental component updates.</p>
+        </section>
+
+        <section class="card">
+            <h2>Incremental Component Updater</h2>
+            <p>AdeshLang updates individual components (compiler binaries, standard library, static runtimes, AI models) incrementally without requiring full installer downloads:</p>
+            <pre class="terminal"><code><span class="prompt">$</span> adesh update
+
+<span class="info">==> Checking for available updates...</span> <span class="success">OK</span>
+  Current version : 0.3.0
+  Components:
+    • compiler     (18.4 MB)
+    • stdlib       (3.2 MB)
+    • runtime      (12.5 MB)
+
+<span class="info">==> Applying incremental update...</span>
+  [1/3] Downloading delta components...
+  [2/3] Verifying SHA-256 signatures...
+  [3/3] Atomically updating version snapshot...
+<span class="success">✓ AdeshLang updated successfully!</span></code></pre>
+        </section>
+
+        <section class="card">
+            <h2>Key CLI Commands</h2>
+            <div class="arch-box">
+                <div class="step">
+                    <strong>adesh update</strong>
+                    <span>Check and apply incremental updates to compiler, stdlib, and runtime</span>
+                </div>
+                <div class="step">
+                    <strong>adesh rollback</strong>
+                    <span>Instant, zero-downtime rollback to the previous working installation snapshot</span>
+                </div>
+                <div class="step">
+                    <strong>adesh ai update</strong>
+                    <span>Update embedded AI reasoning and code generation models independently</span>
+                </div>
+                <div class="step">
+                    <strong>adesh doctor</strong>
+                    <span>Verify toolchain integrity, LLVM 23.1.1 bindings, and environment variables</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Architecture &amp; Safety</h2>
+            <div class="arch-box">
+                <div class="step">
+                    <strong>1. Component Deltas</strong>
+                    <span>Downloads only modified packages instead of redownloading full toolchains</span>
+                </div>
+                <div class="step">
+                    <strong>2. Atomic Staging</strong>
+                    <span>Staged and verified in versioned snapshots before active pointer swap</span>
+                </div>
+                <div class="step">
+                    <strong>3. Instant Recovery</strong>
+                    <span>Previous state is preserved for zero-risk updates and quick recovery</span>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 AdeshLang Team. Open source on <a href="https://github.com/adeshlang/adeshlang" style="color: var(--accent);">GitHub</a>.</p>
+        </footer>
+    </div>
+</body>
+</html>
